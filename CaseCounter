@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class CaseCounter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+			
+			//prompt user to input 
+			System.out.println("Please input your word");
+			
+			
+			//get user input
+			Scanner in = new Scanner(System.in);  
+			String s = in.nextLine();	
+			
+			//get the length of input string
+			int n = s.length();
+			
+			
+			//initial arrays and counters
+			int upperCase = 0;
+			int lowerCase = 0;
+			
+			//check upper and lower Case
+			for (int i = 0; i<n; i++)
+			{
+				if(Character.isUpperCase(s.charAt(i))) ++upperCase ;
+				if(Character.isLowerCase(s.charAt(i))) ++lowerCase;
+			}
+			
+			System.out.println("Lower Case is "+lowerCase+'\n'+"Upper Case is "+upperCase);
+			
+	}
+	}
+
+
